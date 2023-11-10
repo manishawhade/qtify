@@ -2,10 +2,10 @@ import { styled } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button } from "@mui/material";
+import QtifyLogo from "../assets/qtify_logo.png";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -13,7 +13,8 @@ const Search = styled("div")(({ theme }) => ({
   background: "#fff",
   color: "#000",
   width: "auto",
-  paddingRight: 50,
+  paddingRight: 40,
+  paddingLeft: 5,
 }));
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
@@ -46,14 +47,7 @@ function Header() {
             background: "#34c94b",
           }}
         >
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            Qtify
-          </Typography>
+          <img src={QtifyLogo} alt="logo" />
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
