@@ -1,11 +1,15 @@
 import Banner from "./Banner";
+import CardCollection from "./CardCollection";
 import Header from "./Header";
 
 const Landing = () => {
   return (
     <>
       <Header />
-      <Banner />
+      <div>
+        <Banner />
+        <CardCollection />
+      </div>
     </>
   );
 };

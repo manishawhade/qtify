@@ -7,8 +7,6 @@ const Banner = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "#000",
-        color: "#fff",
       }}
     >
       <div>
