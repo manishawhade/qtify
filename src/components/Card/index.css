@@ -1,0 +1,20 @@
+.card {
+  background-color: #000;
+  margin: 5px;
+  border-radius: 10px;
+  max-width: 170px;
+}
+.card-img img {
+  border-radius: 10px 10px 0 0;
+}
+.card-body {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 0 0 10px 10px;
+}
+.card-body span {
+  background-color: #000;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 4px 5px;
+}

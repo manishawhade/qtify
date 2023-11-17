@@ -1,6 +1,6 @@
 import Banner from "./Banner";
-import CardCollection from "./CardCollection";
 import Header from "./Header";
+import Home from "./Home";
 
 const Landing = () => {
   return (
@@ -8,7 +8,8 @@ const Landing = () => {
       <Header />
       <div>
         <Banner />
-        <CardCollection />
+        {/* <CardCollection /> */}
+        <Home />
       </div>
     </>
   );

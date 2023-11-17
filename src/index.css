@@ -20,6 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 img,
 picture,
