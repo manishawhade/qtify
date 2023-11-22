@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./index.css";
 import AlbumsComp from "../AlbumsComp";
+import Faqs from "../Faqs";
 
 const BASE_URL = "https://qtify-backend-labs.crio.do";
 
@@ -68,7 +69,7 @@ const Home = () => {
         <hr />
         <AlbumsComp title={"Songs"} data={songs} genre={genres} />
         <hr />
-        <div>FAQ</div>
+        <Faqs />
       </>
     </div>
   );

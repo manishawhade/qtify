@@ -1,0 +1,10 @@
+.faqs-div {
+  display: flex;
+  flex-flow: column;
+  margin: 10px;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+  color: #34c94b !important;
+}
