@@ -8,7 +8,6 @@ const Landing = () => {
       <Header />
       <div>
         <Banner />
-        {/* <CardCollection /> */}
         <Home />
       </div>
     </>

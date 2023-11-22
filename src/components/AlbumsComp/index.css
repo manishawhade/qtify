@@ -1,0 +1,37 @@
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  gap: 10px;
+}
+
+.albums-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: 32px;
+  height: 32px;
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+.arrow-button-prev {
+  background: url(/src/assets/arrow-prev.svg);
+  right: 97%;
+}
+
+.arrow-button-next {
+  background: url(/src/assets/arrow-next.svg);
+  right: 0;
+}
