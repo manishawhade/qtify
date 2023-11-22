@@ -14,7 +14,7 @@ const AlbumsComp = ({ title, data, genre }) => {
   const [isToggle, setisToggle] = useState(false);
   const [selectedItem, setSelectedItem] = useState("All");
   const [songs, setsongs] = useState(null);
-  console.log(genre);
+
   useMemo(() => {
     if (title === "Songs") {
       if (selectedItem === "All") {
