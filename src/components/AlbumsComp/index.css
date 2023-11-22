@@ -35,3 +35,17 @@
   background: url(/src/assets/arrow-next.svg);
   right: 0;
 }
+
+.songs-filter {
+  display: flex;
+  justify-content: none;
+}
+
+.songs-filter li {
+  width: auto;
+  cursor: pointer;
+}
+
+.seleted-item {
+  border-bottom: 4px solid #34c94b;
+}

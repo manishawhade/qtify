@@ -14,9 +14,9 @@ const Home = () => {
   useEffect(() => {
     fetchTopAlbums();
     fetchNewAlbums();
-    // // fetchAlbumDetail()
-    // fetchSongs();
-    // fetchGenres();
+    // fetchAlbumDetail()
+    fetchSongs();
+    fetchGenres();
   }, []);
 
   const fetchTopAlbums = () => {
@@ -55,16 +55,20 @@ const Home = () => {
     axios
       .get(`${BASE_URL}/genres`)
       .then((result) => {
-        setgenres(result.data);
+        setgenres(result.data.data);
       })
       .catch((err) => {});
   };
 
   return (
-    <div style={{ padding: "0 40px 0 40px" }}>
+    <div className="home-div" style={{ padding: "0 40px 0 40px" }}>
       <>
         <AlbumsComp title={"Top Albums"} data={topAlbum} />
         <AlbumsComp title={"New Albums"} data={newAlbum} />
+        <hr />
+        <AlbumsComp title={"Songs"} data={songs} genre={genres} />
+        <hr />
+        <div>FAQ</div>
       </>
     </div>
   );
