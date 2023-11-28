@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <>
       {props.songs && (
-        <Tooltip title={props.songs.length} arrow placement="top">
+        <Tooltip title={`${props.songs.length} songs`} arrow placement="top">
           <div>
             <Component
               name={props.title}
