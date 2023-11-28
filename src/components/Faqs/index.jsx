@@ -20,7 +20,7 @@ export default function Faqs() {
               border: "1px solid #fff",
               borderRadius: 5,
             }}
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon style={{ color: "#34c94b" }} />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -39,7 +39,7 @@ export default function Faqs() {
             border: "1px solid #fff",
             borderRadius: 5,
           }}
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon style={{ color: "#34c94b" }} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
